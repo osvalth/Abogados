@@ -1,0 +1,81 @@
+/* ************************************** */
+/*  Estilos para la sección nosotros      */
+/* ************************************** */
+
+/* Estilos generales para la sección "Acerca de Nosotros" */
+#acerca {
+    /* background-color: #f4f4f4; */
+    padding: 20px;
+    text-align: center;
+}
+.acerca-d-nosotros{
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-direction: row-reverse;
+}
+
+@media (max-width:768px) {
+    .acerca-d-nosotros{
+        flex-wrap: wrap;
+    }
+}
+.acercaH2{
+    margin-top: 2em;
+    margin-bottom: 0em;
+}
+#acerca h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+#acerca p {
+    font-size: 14px;
+    color: #555;
+    padding: 1em;
+    text-align: justify;
+}
+
+#equipo-img {
+    width: 18em;
+    
+}
+
+/* Estilos para la lista de abogados */
+.abogados {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+
+    margin-top: 5em;
+}
+
+.abogado {
+
+    background-color: #fff;
+    margin: 1em 1em 1em 1em;
+    /* flex-basis: calc(33.33% - 100px);
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.5s;
+    cursor: pointer; */
+}
+
+.abogado img {
+    height: 30vh;
+    border-radius: 50%;
+}
+
+.abogado h3 {
+    font-size: 18px;
+    color: #333;
+    margin-top: 10px;
+}
+
+.abogado p {
+    font-size: 14px;
+    color: #555;
+}

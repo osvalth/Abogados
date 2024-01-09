@@ -1,0 +1,59 @@
+
+/* Estilos para el icono de hamburguesa */
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    }
+    
+    .bar {
+    width: 30px;
+    height: 3px;
+    background-color: #fff;
+    margin: 4px 0;
+    transition: 0.4s;
+    }
+    
+    /* Estilos para dispositivos móviles */
+    @media screen and (max-width: 768px) {
+    .menu-toggle {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      padding: 20px;
+    }
+    
+    .bar {
+      width: 20px;
+    }
+    
+    /* Oculta el menú en dispositivos móviles por defecto */
+    nav ul {
+      display: none;
+      flex-direction: column;
+      background-color: #004b8d;
+      position: absolute;
+      top: 65px;
+      right: 0;
+      z-index: 1;
+    }
+    
+    nav li {
+      margin-right: 0;
+      margin-bottom: 10px;
+    }
+    
+    nav a {
+      color: #fff;
+      padding: 10px;
+    }
+    
+    /* Muestra el menú cuando se hace clic en el icono de hamburguesa */
+    nav.active ul {
+      display: flex;
+    }
+    }
+    nav.active--Menu{
+      display: none;
+    }
+    

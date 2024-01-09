@@ -1,0 +1,62 @@
+/* ************************************** */
+/* Estilos para las tarjetas de servicios */
+/* ************************************** */
+ul {
+    list-style: none;
+}
+
+.tarjetas-servicios {
+    display: flex;
+    align-items: stretch;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+/* Estilos generales de las tarjetas */
+.tarjeta {
+    width: 280px;
+    height: 380px;
+    margin: 20px;
+    perspective: 100px;
+    cursor: pointer;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.8s;
+}
+.rotated{
+    transform: rotateY(180deg);
+}
+
+.tarjeta-front,
+.tarjeta-back {
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.tarjeta-front {
+    background-color: #f4f4f4;
+    color: #004b8d;
+    transform: rotateY(0deg);
+}
+
+.tarjeta-back {
+    background-color: #e55c00;
+    color: #f4f4f4;
+    transform: rotateY(180deg);
+    padding: 10px;
+    text-align: left;
+
+}
+
+/* Estilos para los íconos */
+.tarjeta i {
+    font-size: 35px;
+    margin-bottom: 30px;
+}
